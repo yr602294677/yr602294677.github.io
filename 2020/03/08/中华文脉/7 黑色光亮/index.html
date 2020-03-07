@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>黑色光亮 | Whale</title><meta name="description" content="中国文脉第7章 余秋雨"><meta name="keywords" content="中国文脉"><meta name="author" content="且随意"><meta name="copyright" content="且随意"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="黑色光亮"><meta name="twitter:description" content="中国文脉第7章 余秋雨"><meta name="twitter:image" content="https://www.qisuiyi.top/img/default_blog_index.jpg"><meta property="og:type" content="article"><meta property="og:title" content="黑色光亮"><meta property="og:url" content="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/7%20%E9%BB%91%E8%89%B2%E5%85%89%E4%BA%AE/"><meta property="og:site_name" content="Whale"><meta property="og:description" content="中国文脉第7章 余秋雨"><meta property="og:image" content="https://www.qisuiyi.top/img/default_blog_index.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.css"><link rel="canonical" href="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/7%20%E9%BB%91%E8%89%B2%E5%85%89%E4%BA%AE/"><link rel="prev" title="稷下学宫" href="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/8%E7%A8%B7%E4%B8%8B%E5%AD%A6%E5%AE%AB/"><link rel="next" title="老子和孔子" href="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/6%E8%80%81%E5%AD%90%E5%92%8C%E5%AD%94%E5%AD%90/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight_copy: 'false',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"}
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Whale</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/article/"><i class="fa-fw fa fa-heart"></i><span> 文章</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="http://qisuiyi.top/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">32</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">7</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/article/"><i class="fa-fw fa fa-heart"></i><span> 文章</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://www.qisuiyi.top/img/default_blog_index.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">黑色光亮</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-03-08<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-03-07</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%95%A3%E6%96%87/">散文</a></span><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>　　一</p>
+<p>　　诸子百家，其实就是中国人不同的心理色调。</p>
+<p>　　我觉得，孔子是堂皇的棕黄色，近似于我们的皮肤和大地；老子是缥缈的灰白色，近似于天际的雪峰和老者的须发；庄子是飘逸的银褐色；韩非子是沉郁的金铜色……</p>
+<p>　　我还期待着一种颜色。它使其他颜色更加鲜明，又使它们获得定力。它甚至有可能不被认为是颜色，却是宇宙天地的始源之色。它，就是黑色。</p>
+<p>　　它对我来说有点陌生，因此正是我的缺少。既然是缺少，我就没有理由躲避它，而应该恭敬地向它靠近。</p>
+<p>　　二</p>
+<p>　　是他，墨子。墨，黑也。</p>
+<p>　　据说，他原姓墨胎（胎在此处读作怡），省略成墨，名叫墨翟。诸子百家中，除了他，再也没有用自己的名号来称呼自己的学派的。你看，儒家、道家、法家、名家、阴阳家，每个学派的名称都表达了理念和责任，只有他，干脆利落，大大咧咧地叫墨家。黑色，既是他的理念，也是他的责任。</p>
+<p>　　设想一个图景吧，诸子百家大集会，每派都在滔滔发言，只有他，一身黑色入场，就连脸色也是黝黑的，就连露在衣服外面的手臂和脚踝也是黝黑的，他只用颜色发言。</p>
+<p>　　为什么他那么执著于黑色呢？</p>
+<p>　　这引起了近代不少学者的讨论。有人说，他固守黑色，是不想掩盖自己作为社会低层劳动者的立场。有人说，他想代表的范围可能还要更大，包括比低层劳动者更低的奴役刑徒，因为“墨”是古代的刑罚。钱穆先生说，他要代表“苦似刑徒”的贱民阶层。</p>
+<p>　　有的学者因为这个黑色，断言墨子是印度人。这件事现在知道的人不多了，而我则曾经产生过很大的好奇。胡怀琛先生在一九二八年说，古文字中，“翟”和“狄”通，墨翟就是“墨狄”，一个黑色的外国人，似乎是印度人；不仅如此，墨子学说的很多观点，与佛学相通，而且他主张的“摩顶放踵”，就是光头赤足的僧侣形象。太虚法师则撰文说，墨子的学说不像是佛教，更像是婆罗门教。这又成了墨子是印度人的证据。在这场讨论中，有的学者如卫聚贤先生，把老子也一并说成是印度人。有的学者如金祖同先生，则认为墨子是阿拉伯的伊斯兰教信徒。</p>
+<p>　　非常热闹，但证据不足。最终的证据还是一个色彩印象：黑色。当时不少中国学者对别的国家知之甚少，更不了解在中亚和南亚有不少是雅利安人种的后裔，并不黑。</p>
+<p>　　不同意“墨子是印度人”这一观点的学者，常常用孟子的态度来反驳。孟子在时间和空间上都离墨子很近，他很讲地域观念，连有人学了一点南方口音都会当做一件大事严厉批评；他又很排斥墨子的学说，如果墨子是外国人，真不知会做多少文章。但显然，孟子没有提出过一丝一毫有关墨子的国籍疑点。</p>
+<p>　　我在仔细读过所有的争论文章后笑了，更加坚信：这是中国的黑色。</p>
+<p>　　中国，有过一种黑色的哲学。</p>
+<p>　　三</p>
+<p>　　那天，他听到一个消息，楚国要攻打宋国，正请了鲁班（也就是公输般）在为他们制造攻城用的云梯。</p>
+<p>　　他立即出发，急速步行，到楚国去。这条路实在很长，用今天的政区概念，他是从山东的泰山脚下出发，到河南，横穿河南全境，也可能穿过安徽，到达湖北，再赶到湖北的荆州。他日夜不停地走，走了整整十天十夜。脚底磨起了老趼，又受伤了，他撕破衣服来包扎伤口，再走。就凭这十天十夜的步行，就让他与其他诸子划出了明显的界限。其他诸子也走长路，但大多骑马、骑牛或坐车，而且到了晚上总得找地方睡觉。哪像他，光靠自己的脚，一路走去，一次次从白天走入黑夜。黑夜、黑衣、黑脸，从黑衣上撕下的黑布条去包扎早已满是黑泥的脚。</p>
+<p>　　终于走到了楚国首都，找到了他的同乡鲁班。</p>
+<p>　　接下来他们两人的对话，是我们都知道的了。但是为了不辜负他十天十夜的辛劳，我还要讲述几句。</p>
+<p>　　鲁班问他，步行这么远的路过来，究竟有什么急事？</p>
+<p>　　墨子在路上早就想好了讲话策略，就说：北方有人侮辱我，我想请你帮忙，去杀了他。酬劳是二百两黄金。</p>
+<p>　　鲁班一听就不高兴，沉下了脸，说：我讲仁义，绝不杀人！</p>
+<p>　　墨子立即站起身来，深深作揖，顺势说出了主题。大意是：你帮楚国造云梯攻打宋国，楚国本来就地广人稀，一打仗，必然要牺牲本国稀缺的人口，去争夺完全不需要的土地，这明智吗？再从宋国来讲，它有什么罪？却平白无故地去攻打它，这算是你的仁义吗？你说你不会为重金去杀一个人，这很好，但现在你明明要去杀很多很多的人！</p>
+<p>　　鲁班一听有理，便说：此事我已经答应了楚王，该怎么办？</p>
+<p>　　墨子说：你带我去见他。</p>
+<p>　　墨子见到楚王后，用的也是远譬近喻的方法。他说：有人不要自己的好车，去偷别人的破车；不要自己的锦衣，去偷别人的粗服；不要自己的美食，去偷别人的糟糠，这是什么人？</p>
+<p>　　楚王说：这人一定有病，患了偷盗癖。</p>
+<p>　　接下来可想而知，墨子通过层层比较，说明楚国打宋国也是有病。</p>
+<p>　　楚王说：那我已经让鲁班造好云梯啦！</p>
+<p>　　墨子与鲁班一样，也是一名能工巧匠。他就与鲁班进行了一场模型攻守演练。结果，一次次都是鲁班输了。</p>
+<p>　　鲁班最后说：要赢还有一个办法，但我不说。</p>
+<p>　　墨子说：我知道，我也不说。</p>
+<p>　　楚王问：你们说的是什么办法啊？</p>
+<p>　　墨子说：鲁班以为天下只有我一个人能赢过他，如果把我除了，也就好办了。但我要告诉你们，我的三百个学生已经在宋国城头等候你们多时了。</p>
+<p>　　楚王一听，就下令不再攻打宋国。</p>
+<p>　　这就是墨子对于他的“非攻”理念的著名实践，同样的事情还有过很多。原来，这个长途跋涉者只为一个目的在奔忙：阻止战争，捍卫和平。</p>
+<p>　　一心想攻打别人的，只是上层统治者。社会低层的民众有可能受了奴役或欺骗去攻打别人，但从根本上说，却不可能为了权势者的利益而接受战争。这是黑色哲学的一个重大原理。</p>
+<p>　　这件事情化解了，但还有一个幽默的结尾。</p>
+<p>　　为宋国立下了大功的墨子，十分疲惫地踏上了归途，仍然是步行。在宋国时，下起了大雨，他就到一个门檐下躲雨，但看门的人连门檐底下也不让他进。</p>
+<p>　　我想，这一定与他的黑衣烂衫、黑脸黑脚有关。这位淋在雨中的男人自嘲了一下，暗想：“运用大智慧救苦救难的，谁也不认；摆弄小聪明争执不休的，人人皆知。”</p>
+<p>　　四</p>
+<p>　　在大雨中被看门人驱逐的墨子，有没有去找他派在宋国守城的三百名学生？我们不清楚，因为古代文本中没有提及。</p>
+<p>　　清楚的是，他确实有一批绝对服从命令的学生。整个墨家弟子组成了一个带有秘密结社性质的团体，组织严密，纪律严明。</p>
+<p>　　这又让墨家罩上了一层神秘的黑色。</p>
+<p>　　诸子百家中的其他学派，也有亲密的师徒关系，最著名的有我们曾经多次讲过的孔子和他的学生。但是，不管再亲密，也构不成严格的人身约束。在这一点上墨子又显现出了极大的不同，他立足于低层社会，不能依赖文人与文人之间的心领神会。君子之交淡如水，而墨子要的是浓烈，是黑色黏土般的成团成块。历来低层社会要想凝聚力量，只能如此。</p>
+<p>　　在墨家团体内有三项分工：一是“从事”，即从事技艺劳作，或守城卫护；二是“说书”，即听课、读书、讨论；三是“谈辩”，即游说诸侯，或做官从政。所有的弟子中，墨子认为最能干、最忠诚的有一百八十人，这些人一听到墨子的指令都能“赴汤蹈火，死不旋踵”。后来，墨学弟子的队伍越来越大，照《吕氏春秋》的记载，已经到了“徒属弥众，弟子弥丰，充满天下”的程度。</p>
+<p>　　墨子以极其艰苦的生活方式、彻底忘我的牺牲精神，承担着无比沉重的社会责任，这使他的人格具有一种巨大的感召力。他去世之后，这种感召力不仅没有消散，而且还表现得更加强烈。</p>
+<p>　　据记载，有一次墨家一百多名弟子受某君委托守城，后来此君因受国君追究而逃走，墨家所接受的守城之托很难再坚持，一百多名弟子全部自杀。自杀前，墨家首领派出两位弟子离城远行去委任新的首领，两位弟子完成任务后仍然回城自杀。新被委任的首领阻止他们这样做，他们也没有听。按照墨家规则，这两位弟子虽然英勇，却又犯了规，因为他们没有接受新任首领的指令。</p>
+<p>　　为什么集体自杀？为了一个“义”字。既被委托，就说话算话，一旦无法实行，宁肯以生命的代价保全信誉。</p>
+<p>　　慷慨赴死，对墨家来说是一件很平常的事。</p>
+<p>　　这不仅在当时的社会大众中，而且在以后的漫长历史上，都开启了一种感人至深的精神力量。司马迁所说的“其言必信，其行必果，已诺必成，不爱其躯”的“任侠”精神，就从墨家渗透到中国民间。千年崇高，百代刚烈，不在朝廷兴废，更不在书生空谈，而在这里。</p>
+<p>　　五</p>
+<p>　　这样的墨家，理所当然地震惊四方，成为显学。后来连法家的主要代表人物韩非子也说：“世之显学，儒墨也。”</p>
+<p>　　但是，这两大显学，却不能长久共存。</p>
+<p>　　墨子熟悉儒家，但终于否定了儒家。其中最重要的，是以无差别的“兼爱”否定了儒家有等级的“仁爱”。他认为，儒家的爱，有厚薄，有区别，有层次，集中表现在自己的家庭，家庭里又有亲疏差异，其实最后的标准是看与自己关系的远近，因此核心还是自己。这样的爱是自私之爱。他主张“兼爱”，也就是祛除自私之心，爱他人就像爱自己。</p>
+<p>　　《兼爱》篇说——</p>
+<p>　　若使天下兼相爱，国与国不相攻，家与家不相乱，盗贼无有，君臣父子皆能孝慈，若此则天下治……故天下兼相爱则治，交相恶则乱。故子墨子曰：不可以不劝爱人者，此也。</p>
+<p>　　这话讲得很明白，而且已经接通了“兼爱”和“非攻”的逻辑关系。是啊，既然“天下兼相爱”，为什么还要发动战争呢？</p>
+<p>　　墨子的这种观念，确实碰撞到了儒家的要害。儒家“仁爱”的前提和目的都是礼，也就是重建周礼所铺陈的等级秩序。在儒家看来，社会没有等级，世界是平的了，何来尊严，何来敬畏，何来秩序？在墨家看来，世界本来就应该是平的，只有公平才有所有人的尊严。在平的世界中，根本不必为了秩序来敬畏什么上层贵族。要敬畏，还不如敬畏鬼神，让人们感到冥冥之中有一种督察之力、有一番报应手段，由此建立秩序。</p>
+<p>　　由于碰撞到了要害，儒家急了。孟子挖苦说，兼爱，也就是把陌生人当做自己父亲一样来爱，那就是否定了父亲之为父亲，等于禽兽。这种推理，把兼爱推到了禽兽，看来也实在是气坏了。</p>
+<p>　　墨家也被激怒了，说，如果像儒家一样把爱分成很多等级，一切都以自我为中心，那么，总有一天也能找到杀人的理由。因为有等级的爱最终着眼于等级而不是爱，一旦发生冲突，放弃爱是容易的，而爱的放弃又必然导致仇。</p>
+<p>　　在这个问题上，墨家反复指出儒家之爱的不彻底。《非儒》篇说，在儒家看来，君子打了胜仗就不应该再追败逃之敌，敌人卸了甲就不应该再射杀，敌人败逃的车辆陷入了岔道还应该帮着去推。这看上去很仁爱，但在墨家看来，本来就不应该有战争。如果两方面都很仁义，打什么？如果两方面都很邪恶，救什么？</p>
+<p>　　《耕柱》篇说，墨家告诉儒家，君子不应该斗来斗去。儒家说，猪狗还斗来斗去呢，何况人？墨家笑了，说，你们儒家怎么能这样，讲起道理来满口圣人，做起事情来却自比猪狗？</p>
+<p>　　作为遥远的后人，我们可以对儒、墨之间的争论做几句简单评述。在爱的问题上，儒家比较实际，利用了人人都有的私心，层层扩大，向外类推，因此也较为可行；墨家比较理想，认为在爱的问题上不能玩弄自私的儒术，但他们的“兼爱”难于实行。</p>
+<p>　　如果要问我倾向何方，我会毫不犹豫地回答：墨家。虽然难于实行，却为天下提出了一种纯粹的爱的理想。这种理想就像天际的光照，虽不可触及，却让人明亮。儒家的仁爱，由于太讲究内外亲疏的差别，造成了人际关系的迷宫，直到今天仍难于走出。当然，不彻底的仁爱终究也比没有仁爱好得多，在漫无边际的历史残忍中，连儒家的仁爱也令人神往。</p>
+<p>　　六</p>
+<p>　　除了“兼爱”问题上的分歧，墨家对儒家的整体生态都有批判。例如，儒家倡导的礼仪过于繁缛隆重，丧葬之时葬物多到像死人搬家一样，而且居丧三年天天哭泣的规矩也对子女太不公平，又太像表演。儒家倡导的礼乐精神，过于追求琴瑟歌舞，耗费天下人太多的心力和时间。</p>
+<p>　　从思维习惯上，墨家批评儒家一心复古，只传述古人经典而不鼓励有自己的创作，即所谓“述而不作，信而好古”。墨家认为，只有创造新道，才能增益世间之好。在这里，墨家指出了儒家的一个逻辑弊病。儒家认为“述而不作，信而好古”的人才是君子，而成天在折腾自我创新的则是小人。墨家说，你们所遵从的古，也是古人自我创新的成果呀，难道这些古人也是小人，那你们不就在遵从小人了？</p>
+<p>　　墨家还批评儒家“不击则不鸣”的明哲保身之道，提倡为了天下兴利除弊、“击亦鸣，不击亦鸣”的勇者责任。</p>
+<p>　　墨家在批评儒家的时候，对儒家常有误读，尤其是对“天命”中的“命”、“礼乐”中的“乐”，误读得更为明显。但是，即使在误读中，我们也更清晰地看到了墨家的自身形象。既然站在社会低层大众的立场上，那么，对于面对上层社会的秩序理念，确实有一种天然的隔阂。误读，太不奇怪了。</p>
+<p>　　更不奇怪的是，上层社会终于排斥了墨家。这种整体态度，倒不是出于误读。上层社会不会不知道，连早已看穿一切的庄子，也曾满怀钦佩地说“墨子真天下之好也，将求之不得也，虽枯槁不舍也”；连被统治者视为圭臬的法家，也承认他们的学说中有不少是“墨者之法”；公认为经典的《礼记》中的“大同”理想，也与墨家的理想最为接近。但是，由于墨家所代表的社会力量是上层社会万分警惕的，又由于墨家曾经系统地抨击过儒家，上层社会也就很自然地把它从主流意识形态中区隔出来了。秦汉之后，墨家衰落，历代文人学士虽然也偶有提起，往往句子不多、评价不高，这种情景一直延续到清后期。俞樾在为孙诒让《墨子闲诂》写的序言中说：</p>
+<p>　　乃唐以来，韩昌黎外，无一人能知墨子者。传诵既少，注释亦稀，乐台旧本，久绝流传，阙文错简，无可校正，古言古字，更不可晓，而墨学尘霾终古矣。</p>
+<p>　　这种历史命运实在让人一叹。但是，情况很快就改变了。一些急欲挽救中国的社会改革家发现，旧时代的主流意识形态必须改变，而那些数千年来深入民间社会的精神活力则应该调动起来。因此，大家又惊喜地重新发现了墨子。</p>
+<p>　　孙中山先生在《民报》创刊号中，故意不理会孔子、孟子、老子、庄子，而独独把墨子推崇为“平等”、“博爱”的中国宗师。后来他又经常提到墨子，例如：</p>
+<p>　　仁爱也是中国的好道德，古时最讲“爱”字的莫过于墨子。墨子所讲的兼爱，与耶稣所讲的博爱是一样的。</p>
+<p>　　梁启超先生更是在《新民丛报》上断言：“今欲救亡，厥唯学墨。”他在《墨子学案》中甚至把墨子与西方的思想家亚里士多德、培根、穆勒作对比，认为一比较就会知道孰轻孰重。他伤感地说：</p>
+<p>　　只可惜我们做子孙的没出息，把祖宗遗下的无价之宝，埋在地窖里两千年。今日我们在世界文化民族中，算是最缺乏论理精神、缺乏科学精神的民族，我们还有面目见祖宗吗？如何才能够一雪此耻，诸君努力啊！</p>
+<p>　　孙中山和梁启超，是最懂得中国的人。他们的深长感慨中，包含着历史本身的呼喊声。</p>
+<p>　　墨子，墨家，黑色的珍宝，黑色的光亮，中国亏待了你们，因此历史也亏待了中国。</p>
+<p>　　七</p>
+<p>　　我读《墨子》，总是能产生一种由衷的感动。虽然是那么遥远的话语，却能激励自己当下的行动。我的集中阅读也是在那个灾难的年代。往往是在深夜，每读一段我都会站起身来，走到窗口。我想着两千多年前那个黑衣壮士在黑夜里急速穿行在中原大地的身影。然后，我又亟亟地返回书桌，再读一段。</p>
+<p>　　记得是《公孟》篇里的一段对话吧，儒者公孟子对墨子说，行善就行善吧，何必忙于宣传？</p>
+<p>　　墨子回答说：你错了。现在是乱世，人们失去了正常的是非标准，求美者多，求善者少，我们如果不站起来勉力引导，辛苦传扬，人们就不会知道什么是善了。</p>
+<p>　　对于那些劝他不要到各地游说的人，墨子又在《鲁问》篇里进一步做了回答。他说：到了一个不事耕作的地方，你是应该独自埋头耕作，还是应该热心地教当地人耕作？独自耕作何益于民？当然应该立足于教，让更多的人懂得耕作。我到各地游说，也是这个道理。</p>
+<p>　　《贵义》篇中写道，一位齐国的老朋友对墨子说，现在普天下的人都不肯行义，只有你还在忙碌，何苦呢？适可而止吧。</p>
+<p>　　墨子又用了耕作的例子，说：一个家庭有十个儿子，其中九个都不肯劳动，剩下的那一个就只能更加努力耕作了，否则这个家庭怎么撑得下去？</p>
+<p>　　在《鲁问》篇中，墨子对鲁国乡下一个叫吴虑的人做了一番诚恳表白。他说，为了不使天下人挨饿，我曾想去种地，但一年劳作下来又能帮助几个人？为了不使天下人挨冻，我曾想去纺织，但我的织物还不如一个妇女，能给别人带来多少温暖？为了不使天下人受欺，我曾想去帮助他们作战，但区区一个士兵，又怎么抵御侵略者？既然这些作为都收效不大，我就明白，不如以历史上最好的思想去晓示王侯贵族和平民百姓。这样，国家的秩序、民众的品德一定都能获得改善。</p>
+<p>　　对于自己的长期努力一直受到别人诽谤的现象，墨子在《贵义》篇里也只好叹息一声。他说，一个长途背米的人坐在路边休息，站起再想把米袋扛到肩膀上的时候却没有力气了，看到这个情景的过路人不管老少贵贱都会帮他一把，将米袋托到他肩上。现在，很多号称君子的人看到肩负道义辛苦行路的义士，不仅不去帮一把，反而加以毁谤和攻击。你看，当今义士的遭遇还不如那个背米的人。</p>
+<p>　　尽管如此，他在《尚贤》篇里还是勉励自己和弟子们：有力量就要尽量帮助别人，有钱财就要尽量援助别人，有道义就要尽量教诲别人。</p>
+<p>　　那么，千说万说，墨子四处传播的道义中，有哪一些特别重要、感动过千年民间社会，并感动了孙中山、梁启超等人呢？</p>
+<p>　　我想，就是那简单的八个字吧——</p>
+<p>　　兼爱，非攻，尚贤，尚同。</p>
+<p>　　“兼爱”、“非攻”我已经在上文作过解释，“尚贤”、“尚同”还没有，但这四个中国字在字面上已经表明了它们的基本含义：崇尚贤者，一同天下。所谓一同天下，也就是以真正的公平来构筑一个不讲等级的和谐世界。</p>
+<p>　　我希望，人们在概括中华文明的传统精华时，不要遗落了这八个字。</p>
+<p>　　那个黑衣壮士背着这八个字的精神粮食已经走了很久很久。他累了，粮食口袋搁在地上也已经很久很久。我们来背吧，请帮帮忙，托一把，扛到我的肩上。</p>
+</div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%B8%AD%E5%9B%BD%E6%96%87%E8%84%89/">中国文脉    </a></div><div class="post_share"><div class="social-share" data-image="https://www.qisuiyi.top/img/default_blog_index.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/8%E7%A8%B7%E4%B8%8B%E5%AD%A6%E5%AE%AB/"><img class="prev_cover lazyload" data-src="https://www.qisuiyi.top/img/default_blog_index.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>稷下学宫</span></div></a></div><div class="next-post pull_right"><a href="/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/6%E8%80%81%E5%AD%90%E5%92%8C%E5%AD%94%E5%AD%90/"><img class="next_cover lazyload" data-src="https://www.qisuiyi.top/img/default_blog_index.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>老子和孔子</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/5发现殷墟/" title="发现殷墟"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">发现殷墟</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/8稷下学宫/" title="稷下学宫"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">稷下学宫</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/14走向大唐/" title="走向大唐"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">走向大唐</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/20断裂/" title="断裂"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">断裂</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/16仰望长安/" title="仰望长安"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">仰望长安</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/4感悟神话/" title="感悟神话"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">感悟神话</div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'oXAUQbPsWpC7eCSa4p11LaOq-gzGzoHsz',
+  appKey:'WQ3bbNkvCgrRhHBktsBX9Pmm',
+  placeholder:'欢迎留言',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer id="footer" style="background-image: url(https://www.qisuiyi.top/img/default_blog_index.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By 且随意</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">永远年轻，永远热泪盈眶</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>

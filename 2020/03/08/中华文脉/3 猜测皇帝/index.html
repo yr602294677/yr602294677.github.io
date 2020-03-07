@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>猜测黄帝 | Whale</title><meta name="description" content="中国文脉第3章 余秋雨"><meta name="keywords" content="中国文脉"><meta name="author" content="且随意"><meta name="copyright" content="且随意"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="猜测黄帝"><meta name="twitter:description" content="中国文脉第3章 余秋雨"><meta name="twitter:image" content="https://www.qisuiyi.top/img/default_blog_index.jpg"><meta property="og:type" content="article"><meta property="og:title" content="猜测黄帝"><meta property="og:url" content="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/3%20%E7%8C%9C%E6%B5%8B%E7%9A%87%E5%B8%9D/"><meta property="og:site_name" content="Whale"><meta property="og:description" content="中国文脉第3章 余秋雨"><meta property="og:image" content="https://www.qisuiyi.top/img/default_blog_index.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.css"><link rel="canonical" href="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/3%20%E7%8C%9C%E6%B5%8B%E7%9A%87%E5%B8%9D/"><link rel="prev" title="感悟神话" href="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/4%E6%84%9F%E6%82%9F%E7%A5%9E%E8%AF%9D/"><link rel="next" title="笔墨历史" href="http://www.qisuiyi.top/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/2%E7%AC%94%E5%A2%A8%E5%8E%86%E5%8F%B2/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight_copy: 'false',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"}
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Whale</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/article/"><i class="fa-fw fa fa-heart"></i><span> 文章</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="http://qisuiyi.top/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">32</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">7</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/article/"><i class="fa-fw fa fa-heart"></i><span> 文章</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://www.qisuiyi.top/img/default_blog_index.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">猜测黄帝</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-03-08<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-03-07</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%95%A3%E6%96%87/">散文</a></span><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>　　一个人面对一种宏大的文化，就像一个小孩面对一座大山。尽管住在山脚下，天天看见它，但要真正了解它，几乎不可能。这是因为，它的悠久历史，与小孩的年岁构不成平等的对话；它的惊人体量，与小孩的躯体形不成合理的互视。</p>
+<p>　　只有极小的可能，这个小孩在经历了残酷的磨炼之后，在一个极为安静又极为孤独的境遇中，开始对家门口的大山重新打量、重新猜测、重新感悟、重新发现。</p>
+<p>　　我对中国文化史的重新打量，就发生在一个特殊的年月，一个特殊的地方。我将用“猜测黄帝”、“感悟神话”、“发现殷墟”三个话题，来表述我在近乎偶然的情况下突然对家门口的大山深感惊讶、开始探寻的过程。</p>
+<p>　　一</p>
+<p>　　那天夜里，风雨实在太大，大到惊心动魄。</p>
+<p>　　是台风吗？好像时间还早了一点。但在半山小屋遇到那么大的风雨，又是在夜间，心里感觉比什么级别的台风都要恐怖。</p>
+<p>　　我知道这山上没有人住。白天偶尔有一些山民上来，但说是山民，却都住在山脚下。因此，在这狂风暴雨的涡旋中，我彻底孤单。蔓延无际的林木这时候全都变成了黑海怒涛，它们不再是自己，而是天地间所有暴力的体现者和响应者，都在尽着性子奔涌咆哮、翻卷肆虐。</p>
+<p>　　没有灯火的哆嗦，没有野禽的呻吟，没有缓释的迹象，没有黎明的印痕。一切都没有了，甚至怀疑，朗朗丽日下的风轻云淡，也许只是一个奢侈的梦影？</p>
+<p>　　这个时候最容易想起的，是千万年前的先民。他们在草泽荒滩上艰难迈步的时候，感受最深的也一定是狂风暴雨的深夜。因为，这是生存的悬崖，也是毁灭的断壁，不能不全神贯注，触目惊心。对于平日的寻常气象、山水风景，他们也有可能淡淡地了上两眼，却还分不出太多的心情。</p>
+<p>　　此刻我又顺着这个思路想开去了，一下子跳过了夏、商、周、春秋战国、秦、两汉，来到了史前。狂风暴雨删去了历史，让我回到了只有自然力与人对峙的洪荒时代。很多画面交叠闪现，我似乎在画面里，又似乎不在。有几个人有点脸熟，仔细一看又不对……</p>
+<p>　　——这时，我已经渐渐睡着了。</p>
+<p>　　等我醒来时听到了鸟声，我知道，风雨已经过去，窗外山光明媚。</p>
+<p>　　我说过，我在山上不小心碰上了蒋介石的一个隐秘藏书楼。原来叫“中正图书馆”，一九四九年之后当然废弃了，却没有毁坏，摘下了牌子，关闭了门窗，由一位年迈的老大爷看守着。老大爷在与我进行过一次有关古籍版本的谈话后，如遇知音，允许我可以任意阅读藏书楼里所有的书。我认真浏览了一遍，已经把阅读重点放在《四部备要》、《万有文库》和《东方杂志》上。</p>
+<p>　　由于一夜的风雨，今天的山路上全是落叶断枝。空气特别清新，山泉格外充沛。我上山后放好买来的干粮，又提着一个小小的铁皮桶到溪边打了一桶山泉水回来，便静静地坐着，等待老大爷上山，打开藏书楼的大门。</p>
+<p>　　二</p>
+<p>　　与世界上其他古老帝国总是互相远征、互毁文明的情形不同，历代中国人内战再激烈，也只是为了争夺对华夏文明的正统继承权，因此无论胜败都不会自毁文明。即便是周边地区的游牧群落入主中原，也迟早会成为华夏文明中的一员。</p>
+<p>　　这么一想，我潜迹半山的生活立即变得纯净。当时山下的形势还十分险恶，我全家的灾难仍然没有解除。但我的心态变了，好像层层叠叠的山坡、山树、山岚一齐拽着我蹬开了山下的浑浊喧嚣，使我飘然升腾。一些看似空泛不实的大课题浮现在眼前，而且越来越让我感受到它们的重要性。</p>
+<p>　　例如，什么是华夏文明？什么是炎黄子孙？</p>
+<p>　　答案在五千年之前。</p>
+<p>　　我当时想，什么时候世道靖和，我会下山，去瞻仰一些历史遗址。因为正是那些地方，决定了中国人之所以成为中国人。此刻在山上，只能边读古籍边遥想，让心灵开始绊绊地旅行。</p>
+<p>　　我在早晨轻轻自语：黄帝，对，还是从五千年的黄帝开始，哪怕是猜测。</p>
+<p>　　三</p>
+<p>　　猜测黄帝，就是猜测我们遥远的自己。</p>
+<p>　　其实，很早就有人在猜测了。</p>
+<p>　　从藏书楼书架上取下写于两千一百多年前的《淮南子》，其中有一段说——</p>
+<p>　　世俗之人多尊古而贱今，故为道者必托之于神农、黄帝而后能入说。</p>
+<p>　　可见早在《淮南子》之前，人们不管说什么事都喜欢扯上炎帝、黄帝了，好像不这么扯就没有办法使那些事重要起来。这么扯来扯去，炎帝和黄帝的故事就编得越来越多、越来越细，当然也越来越不可信。结果，到了司马迁写《史记》的时代，便出现了“愈古则材料愈多”的怪现象。</p>
+<p>　　大家先是为了需要而猜测，很快把猜测当做了传说，渐渐又把传说当做了史实，越积越多。其中很多内容听起来奇奇怪怪、荒诞不经，因此司马迁说：“百家言黄帝，其文不雅驯。”</p>
+<p>　　这种情形直到今天我们还很容易体会。看看身边，越是模糊的事情总是“故事”越多，越是过去的事情总是“细节”越全，越是虚假的事情总是“证据”越硬，情形可能有点类似。</p>
+<p>　　司马迁根据自己的鉴别标准对这些内容进行了比较严格的筛选，显示了一个历史学家的职守。但是，他的《史记》还是从黄帝开始的。他确认，不管怎么说，黄帝是中国历史的起点。</p>
+<p>　　这事过了整整两千年之后，被怀疑了。二十世纪二十年代，一批近代历史学家，根据欧洲的实证主义史学观，认为中国历史应该从传说中彻底解脱出来。他们把可信的历史上限划到东周，也就是春秋战国时期。他们认为在这之前的历史是后人伪造的，甚至断言司马迁也参加了伪造。因此，他们得出结论：“东周以上无史。”按照这种主张，中国历史的起点是公元前九世纪，离现在不到三千年。而黄帝的时代，虽然还无法做准确的年代推定，但估摸着也总有四五千年了吧。这一来，中国的历史被这股疑古思潮缩短了一小半。</p>
+<p>　　疑古思潮体现了近代科学思维，显然具有不小的进步意义。至少，可以嘲弄一下中国民间历来喜欢把故事当做历史的浅薄顽癖。但是，这毕竟是近代科学思维的初级形态，有很大的局限性，尤其无法处置那些属于“集体无意识”的文化人类学课题，无法解读神话传说中所沉淀的群体密码，无法阐释混沌时代所蕴藏的神秘真实。这个问题，我在以后还会专门说一说。</p>
+<p>　　其实十九世纪的西方考古学已经开始证明，很多远古传说极有可能掩埋着让人们大吃一惊的史实。例如德国考古学家谢里曼（Heinrich<br>Schliemann）从一八七○年开始对于特洛伊遗址的挖掘，一八七四年对于迈锡尼遗址的挖掘，以及英国考古学家伊文斯（Arthur<br>Evans）一九○○年对于克诺索斯王宫遗址的挖掘，都证明了《荷马史诗》和其他远古传说并非虚构。</p>
+<p>　　就在伊文斯在希腊克里特岛上发掘克诺索斯王宫的同时，中国发现了甲骨文，有力地证明商代存在的真实性。这就把疑古的学者们所定的中国历史的上限公元前九世纪一下子推前到了公元前十四世纪。有些疑古学者步步为营，说：“那么，公元前十四世纪之前的历史是伪造的。”其实，甲骨文中的不少材料还可以从商代推到夏代。</p>
+<p>　　半山藏书楼的古代典籍和现代书刊被我反复地翻来翻去，我又发现了另外一个秘密。</p>
+<p>　　那就是，在疑古思潮产生的更早一点时间，学术文化界还出现过“华夏文明外来说”。先是一些西方学者根据他们对人类文明渊源的强烈好奇，依据某些相似的细节，大胆地拉线搭桥，判断华夏文明来自于埃及、印度、土耳其、东南亚、巴比伦。其中影响较大的，是巴比伦，即幼发拉底河、底格里斯河流域的美索不达米亚文明所在地。</p>
+<p>　　那地方，确实是人类文明最早的发祥地。很多古代文明都从那里找到了渊源，有的学者已经断言那是“人类文明唯一的起点”。那么，华夏文明为什么不是呢？</p>
+<p>　　连中国一些很著名的学者也被这种思潮裹卷，而且又从中国古籍中提供一些“证据”。例如蒋观云、刘师培、黄节、丁谦等都是。当时的一份《国粹学报》就发表过好几篇这样的文章。让我惊讶的是，大学问家章太炎也在他的《序种姓篇》中赞成了外来说。</p>
+<p>　　设想都非常开放，理由都有点勉强，往往是从一些古代中外名词在读音上的某些相近来做出大胆的推断。例如章太炎认为中国的“葛天”，很可能是“加尔特亚”的转音；黄节认为中国的“盘古”，很可能是“巴克”的转音；刘师培认为中国的“泰帝”，很可能是“迦克底”的转音。在这件事情上做得比较过分的是丁谦，他断言华夏文明早期创造的一切，巴比伦文明都已经有了，包括天文、历法、数学、井田制、服饰、器用都来自那里。连文字也是，因为据说八卦图像与巴比伦的楔形文字有点相似。有的学者甚至凭着想象把巴比伦文明传入华夏大地的路线图都画出来了。</p>
+<p>　　更有趣的是，不同的幻想之间还发生争论，就像两个睡在同一个屋子里的人用梦话争吵了起来。例如丁谦认为，把巴比伦文明传入中国的带头人是盘古，而章鸿钊则认为是黄帝。理由之一是，庄子说过黄帝登昆仑之上，而昆仑山正好是巴比伦文明传入中国的必经中介。</p>
+<p>　　不应该责怪这些学者“数典忘祖”。他们突然受到世界宏观思维的激励，试图突破千年传统观念探索华夏文明的异域源头，这并不影响他们对华夏文明的热爱。他们中有的人还是杰出的爱国人士。但是毫无疑问，他们的论述暴露了中国传统学术方法的典型弊病，那就是严重缺乏实证材料，却又好做断语。即便有一点“实证”，也是从文本到文本的跳跃式比照，颇多牵强附会。若要排除这种牵强附会，必须有一种“证伪”机制，即按照几个基本程序证明伪之为伪，然后方知真之为真。这些断言华夏文明来自巴比伦的学者，在自己的思维中从来就缺少这种逆向的证伪习惯，因此听到风就是雨了，而且是倾盆大雨。</p>
+<p>　　但是，考古学家们发现了越来越多的实物证据，不断地证明着这片土地上文明发生的独立根脉。我还朦胧记得，好像是地质学家翁文灏吧，发表文章阐述远古大洪水所沉积的黄土与大量旧石器时代文物的关系，证明黄河流域也有过旧石器时代，与西方的旧石器时代平行共存。他的文章我也是在半山藏书楼看到的，但那篇文章的标题，现在记不起来了。</p>
+<p>　　有过了“疑古”、“外来”这两大思潮，又有了不少考古成果，我们就可以重新检视史料记载，对黄帝时代做出比较平稳的猜测了。</p>
+<p>　　看管半山藏书楼的老大爷已经连续问了我三次：“这么艰深的古书，这么枯燥的杂志，你那么年轻，怎么有耐心几个月几个月地看下去？”</p>
+<p>　　前两次我只是笑笑，等到问第三次时，我做了回答。</p>
+<p>　　我说：“大爷，只要找到一个有意义的大疑问，看古往今来的相关争论，然后加入自己的判断和猜测，这就像看一场长长的球赛，看着看着自己也下场了，非常有趣。”</p>
+<p>　　其实，这也就是我初步建立的学术路线。</p>
+<p>　　四</p>
+<p>　　我当时对黄帝的猜想只能是粗线条的，因为半山藏书楼虽然有不少书籍，但毕竟有限。</p>
+<p>　　黄帝，是华夏民族实现第一次文明腾跃的首领。在这之前，中国大地还处于混沌洪荒之中。因此，后代就把各项文明的开创之功都与他联系在一起，贴附在他身上，并把他看成是真正的始祖。这并不是说，华夏文明由他开始，而只是说，决定华夏文明之成为华夏文明的那个关键历史阶段，以他为代表。</p>
+<p>　　黄帝出生在哪里？肯定不是巴比伦，而是在黄河流域。在黄河流域哪一段？这就不是很重要了，因为他的部落一直在战争中迁徙，所谓“迁徙往来无常处，以师兵为营卫”。有关黄帝出生地的说法倒是有好几种，牵涉到现在从甘肃到山东的很多省。经过仔细比较，陕西、河南两地似乎更有说服力。而我个人则倾向于河南新郑，那里自古就有“轩辕之丘”、“有熊氏之墟”。黄帝号“轩辕氏”，又号“有熊氏”，可以对应起来。</p>
+<p>　　黄帝有一个“生死冤家”，那就是炎帝。</p>
+<p>　　历来有不少人认为炎帝就是神农氏，但也有人说他只是神农氏时代的最后一位首领。炎帝好像出生在陕西，后来也到河南来了，并且延伸到了长江流域。</p>
+<p>　　黄帝和炎帝分别领导的两个部落，在当时是最显赫的。</p>
+<p>　　炎帝的主要业绩比较明确，那就是农业。他带领人们从采集野果、捕鱼打猎的原始生态，进入到农业生态，开始种植五谷菜蔬，发明了“火耕”的方法和最早的耕作农具。他也触及了制陶和纺织，还通过“尝百草”而试验医药。显然，炎帝为这片土地的农耕文明打下了最初的基础。</p>
+<p>　　相比之下，黄帝的业绩范围就扩大了很多。除了农业，还制作舟车、养蚕抽丝、制玉、做兵器，并开始采铜，发明文字和历法。</p>
+<p>　　由此做出判断，黄帝应该比炎帝稍稍晚一点。在农耕文明的基础上，黄帝可以有多余的财富来做一些文明等级更高的事情了。这样，后来他们发生军事对峙，也就各自代表着前后不同的历史痕迹。简单说来，黄帝要比炎帝进步一点。所谓“轩辕之时，神农世衰”，就传达了这样的信息。</p>
+<p>　　在我的猜想中，炎帝平和务实，厚德载物；而黄帝则气吞山河，怀抱千里。</p>
+<p>　　据《商子》记载，在炎帝的部落里，“男耕而食，妇织而衣，刑政不用而治，甲兵不起于王”。这实在是一个让后人永远向往的太平世道。《庄子》也有记载，说那个时期“耕而食，织而衣，无有相害之心”。按《庄子》的说法，那还是一个“民知其母，不知其父”的母系社会。其实，从其他种种迹象判断，那已经是一个从母系社会向父系社会过渡的时代。</p>
+<p>　　黄帝就不一样了。男性的力量大为张扬，温柔的平静被打破，试图追求一种更加宏大的平衡。《史记·五帝本纪》说黄帝“习用干戈”，“修德振兵”，“抚万民，度四方”，俨然是一位骑在战马上俯瞰原野的伟大首领。</p>
+<p>　　黄帝所达到的高度，使他产生了统治其他部落的雄心。这在大大小小各个部落互相杀伐的乱局中，是一种自然心理。而且，从我们今天的目光看去，这也是一种历史需要。</p>
+<p>　　大量低层次的互耗，严重威胁着当时还极为脆弱的文明底线，因此急于需要有一种力量来结束这种互耗，使文明得以保存和延续。于是，鸿蒙的声音从大地深处传出：王者何在？</p>
+<p>　　这里所谓的“王者”，还不是后世的“皇帝”，而是一种不追求个人特权，却能感召四方、平定灾祸的意志力。但是，这种意志力在建立过程中，必然会遇到无数障碍，其中最大的障碍，往往是与自己旗鼓相当、势均力敌的强者。对黄帝而言，第一是炎帝，第二是蚩尤。</p>
+<p>　　炎帝的文明程度也比较高，也曾收服过周边的一些部落，因此很有自信，不认为自己的部属必须服从黄帝。</p>
+<p>　　就自身立场而言，这种“保境安民”的思维并没有错，但就整体文明进程的“大道”而言，却成了阻力。而且，在这个时候他的部落已经开始衰落。</p>
+<p>　　黑格尔说世上最深刻的悲剧冲突，双方不存在对错，只是两个都有充分理由的片面撞到了一起。双方都很伟大和高尚，但各自为了自己的伟大和高尚，又都无法后退。</p>
+<p>　　黄帝和炎帝，华夏文明的两位主要原创者，我们的两位杰出祖先，终于成了战争中的对手。</p>
+<p>　　作为他们的后代，我们拉不住他们的衣袖。他们怒目相向，使得一直自称“炎黄子孙”的我们十分尴尬。说时迟那时快，他们已经打起来了。</p>
+<p>　　不难想象，长年活动在田野间的农具发明家炎帝必然打不过一直驰骋在苍原上的强力拓展者黄帝。这个仗打得很惨。</p>
+<p>　　惨到什么程度？只知道，从此中国语文中出现了一个让人触目惊心的用语：“血流漂杵。”杵，舂粮、捶衣的圆木棒。战场上流血太多，把这样的圆木棒都漂浮起来了，那是什么样的场面！</p>
+<p>　　这场战争出现在中国历史的入场口，具有宏大的哲学意义。它告诉后代，用忠奸、是非、善恶来概括世上一切争斗，实在是一种太狭隘的观念。很多最大的争斗往往发生在文明共创者之间。如果对手是奸佞、恶棍，反倒容易了结。长期不能了结的，大多各有庄严的持守。</p>
+<p>　　遗憾的是，这个由炎黄之战首度展示的深刻道理很少有人领会，因此历来总把一部部难于裁断的伤痛历史，全然读成了通俗的黑白故事。</p>
+<p>　　黄帝胜利后，他需要解释这场战争，尤其是对炎帝的大量部族和子民。他对于死亡了的炎帝动用了一个可重可轻的概念：无道。至少在当时大家都明白，这不是说炎帝没有道德，而是说炎帝没有接受黄帝勇任王者的大道。</p>
+<p>　　这种说法延续了下来。贾谊的《新书·益壤》记载：</p>
+<p>　　炎帝无道，黄帝伐之涿鹿之野，血流漂杵，诛炎帝而兼其地，天下乃治。</p>
+<p>　　这样的记载猛一读，会对炎帝产生负面评价，其实是不公平的。</p>
+<p>　　这里所说的涿鹿之野，应为阪泉之野，涿鹿之野是后来黄帝战胜蚩尤的地方。黄帝战胜蚩尤的事，另是一番壮阔的话题。我的《山河之书》中有一篇《蚩尤的后代》，写到了这件事。</p>
+<p>　　五</p>
+<p>　　黄帝相继战胜炎帝和蚩尤之后，威震中原，各方势力“咸尊轩辕为天子”。原来炎帝的部落与黄帝的部落地缘相近，关系密切，很自然地组成了“炎黄之族”。这中间其实还包含着蚩尤和其他部落的文明。后来，各地各族的融合进一步加大加快，以血缘为基础的原始部落逐渐被跨地域的部落联盟所取代，出现了“华夏大族”的概念。</p>
+<p>　　“华夏”二字的来源，说法很多。章太炎认为是从华山、夏水而来。而有的学者则认为“华”是指河南新郑的华阳，“夏”的本义是大，意谓中原大族，连在一起可理解为从华阳出发的中原大族。也有学者认为“华”的意义愈到后来愈是摆脱了华山、华阳等具体地名，而是有了《说文》里解释的形容意义：“华，荣也。”那么，“华夏”也就是指“繁荣的中原大族”。</p>
+<p>　　这就遇到历史地理学、语言文字学和社会心理学之间的不同坐标了。因各有其理，可各取所需，也可兼收并采。</p>
+<p>　　黄帝之后，便是著名的尧、舜、禹时代。</p>
+<p>　　这三位部落联盟的首领，都拥有高尚的道德、杰出的才能、辉煌的业绩，因此也都拥有了千古美名。在此后的历史上，他们都成了邈远而又高大的人格典范，连恶人歹徒也不敢诋毁。原因是，他们切切实实地发展了黄帝时代开创的文明事业，有效地抗击了自然灾害，推进了社会管理制度，使华夏文明更加难于倾覆了。</p>
+<p>　　由于社会财富的积累、利益争逐的加剧，权力性质发生了变化。英雄主义的无私首领，不能不演变为巨大利益的执掌者。终于，大禹的儿子建立了第一个君位世袭的王朝——夏。</p>
+<p>　　君王世袭制的建立，很容易被激进的现代学人诟病，认为这个曾经为了治水“三过家门而不入”的大禹，终于要安排子孙把财富和权力永远集中在自家门内，成为“家天下”。其实，这是在用现代小农思维和市民心理贬低远古巨人。</p>
+<p>　　一种重大政治制度的长久建立，大多是当时当地生产力发展和各种社会需要的综合成果，而不会仅仅出于个人私欲。否则，为什么人类所有重大的古文明都会必然地进入帝国时代？</p>
+<p>　　部落首领由谁继位，这在大禹的时代已成了一个极为复杂险峻、时时都会酿发战祸的沉重问题。选择贤者，当然是一个美好的愿望。但是，谁是贤者？哪一个竞争者不宣称自己是贤者？哪一个族群不认为自己的头目是贤者？</p>
+<p>　　在这种情况下，鉴定贤不贤的机制又在哪里？这种机制是否公平，又是否有效？如果说，像大禹这样业已建立了“绝对权威”的首领可以替代鉴定机制，那他会不会看错？如果壮年时代不会看错，那么老了呢？病了呢？精神失控了呢？退一万步说，他永远不会看错，那么，在他离世之后又怎么办？他的继位者再做选择的时候，会不会因为缺少权威而引起纷争？当纷争一旦燃烧为战火，谁还会在乎部落？谁还会在乎联盟？当一切都不在乎的时候，文明何在？苍生何在？……</p>
+<p>　　这一系列问题，人类是在经历了几千年的摸索之后才渐渐找到出路的，但直到今天，任何一条出路仍然无法适合不同的地域。因此，要大禹在四千多年前眼看禅让选贤的办法已经难于继续的时候立即找到一个有效的民主选拔制度，是颠倒历史的幻想。</p>
+<p>　　在大禹看来，与其每次选拔都会引发一场腥风血雨，还不如找一条能够堵住太多野心的小路，那就是世袭。世袭中也会有争夺，但规模总要小得多，与苍生关涉不大。高明的大禹当然不会不知道，儿孙中必有不良、不肖、不才之辈，将会辱没自己的家声和王朝尊严，也会给他们自己带来灾祸。但是，这又有什么办法呢？或许，可以通过强化朝廷的辅佐力量和行政机制来弥补？总而言之，这是在文明程度还不高的时代，为了防止无休无止的权力争夺战而做出的无奈选择。</p>
+<p>　　不管怎么说，在当时，夏朝的建立是华夏文明的一个新开端。从现代世界判断文明程度的一些基本标准，例如是否拥有文字、城市、青铜器、祭祀来看，华夏文明由此迈进了一个极重要的门槛。</p>
+<p>　　时间，大概在公元前二十一世纪。</p>
+<p>　　从此，“茫茫禹迹，划为九州。”</p>
+<p>　　传说时代结束了。</p>
+<p>　　六</p>
+<p>　　读完半山藏书楼里有关传说时代的资料，已是夏天。山上的夏天早晚都不炎热，但在中午完全没风的时候，整座山就成了一个大蒸笼，恍惚中还能看到蒸气像一道道刺眼的小白龙在向上游动。</p>
+<p>　　一动不动地清坐着，还是浑身流汗。我怕独个儿中暑，便赤膊穿一条短裤，到住所不远处的一条小溪边，捧起泉水洗脸洗身子，顿时觉得浑身清爽。但很快又仓皇了，因为草丛中窜出一大群蚊子，叮上我了。小时候在家乡只知道蚊子是晚上才出来的，没想到在山上没有这个时间界限。</p>
+<p>　　我赶紧返回，蚊子还跟着。我奔跑几步，蚊子跟不上了，但也许是我身上全是泉水和汗水，滑滑的，蚊子叮不住。</p>
+<p>　　我停下脚步，喘口气。心想，不错，四千一百多年前，传说的时代结束了</p>
+</div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%B8%AD%E5%9B%BD%E6%96%87%E8%84%89/">中国文脉    </a></div><div class="post_share"><div class="social-share" data-image="https://www.qisuiyi.top/img/default_blog_index.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/4%E6%84%9F%E6%82%9F%E7%A5%9E%E8%AF%9D/"><img class="prev_cover lazyload" data-src="https://www.qisuiyi.top/img/default_blog_index.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>感悟神话</span></div></a></div><div class="next-post pull_right"><a href="/2020/03/08/%E4%B8%AD%E5%8D%8E%E6%96%87%E8%84%89/2%E7%AC%94%E5%A2%A8%E5%8E%86%E5%8F%B2/"><img class="next_cover lazyload" data-src="https://www.qisuiyi.top/img/default_blog_index.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>笔墨历史</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/21六百年郁闷/" title="六百年郁闷"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">六百年郁闷</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/8稷下学宫/" title="稷下学宫"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">稷下学宫</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/14走向大唐/" title="走向大唐"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">走向大唐</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/20断裂/" title="断裂"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">断裂</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/16仰望长安/" title="仰望长安"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">仰望长安</div></a></div><div class="relatedPosts_item"><a href="/2020/03/08/中华文脉/4感悟神话/" title="感悟神话"><img class="relatedPosts_cover lazyload"data-src="https://www.qisuiyi.top/img/default_blog_index.jpg"><div class="relatedPosts_title">感悟神话</div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'oXAUQbPsWpC7eCSa4p11LaOq-gzGzoHsz',
+  appKey:'WQ3bbNkvCgrRhHBktsBX9Pmm',
+  placeholder:'欢迎留言',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer id="footer" style="background-image: url(https://www.qisuiyi.top/img/default_blog_index.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By 且随意</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">永远年轻，永远热泪盈眶</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
