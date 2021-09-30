@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>JAVA题目 | Whale</title><meta name="description" content="JAVA题目"><meta name="keywords" content="JAVA"><meta name="author" content="且随意"><meta name="copyright" content="且随意"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="JAVA题目"><meta name="twitter:description" content="JAVA题目"><meta name="twitter:image" content="https://yr602294677.github.io/img/default_blog_index.jpg"><meta property="og:type" content="article"><meta property="og:title" content="JAVA题目"><meta property="og:url" content="http://www.qiesuiyi.top/2019/10/09/java%E9%A2%98%E7%9B%AE/"><meta property="og:site_name" content="Whale"><meta property="og:description" content="JAVA题目"><meta property="og:image" content="https://yr602294677.github.io/img/default_blog_index.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.css"><link rel="canonical" href="http://www.qiesuiyi.top/2019/10/09/java%E9%A2%98%E7%9B%AE/"><link rel="prev" title="MQ基础知识" href="http://www.qiesuiyi.top/2019/10/17/MQ%E7%9B%B8%E5%85%B3/"><link rel="next" title="Head first for 设计模式" href="http://www.qiesuiyi.top/2019/10/09/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight_copy: 'false',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"}
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Whale</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/article/"><i class="fa-fw fa fa-heart"></i><span> 文章</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="http://yr602294677.github.io/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">36</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">10</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/article/"><i class="fa-fw fa fa-heart"></i><span> 文章</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1-private修饰的方法可通过反射访问，那么private的意义是什么？"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">1. private修饰的方法可通过反射访问，那么private的意义是什么？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2-一个java文件有三个类，编译后有几个class文件？"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">2.一个java文件有三个类，编译后有几个class文件？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#3-局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">3.局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#4-什么叫原子性操作？int-i-1-是原子性操作吗？"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">4.什么叫原子性操作？int i= 1 是原子性操作吗？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#5-接口不用public修饰，实现类要public修饰"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">5.接口不用public修饰，实现类要public修饰</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#6-String之所以不可变，是因为jdk中用final修饰了它。"><span class="toc_mobile_items-number">6.</span> <span class="toc_mobile_items-text">6.String之所以不可变，是因为jdk中用final修饰了它。</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#8-static修饰符："><span class="toc_mobile_items-number">7.</span> <span class="toc_mobile_items-text">8.static修饰符：</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#9-成员变量与局部变量"><span class="toc_mobile_items-number">8.</span> <span class="toc_mobile_items-text">9.成员变量与局部变量</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#10-反射"><span class="toc_mobile_items-number">9.</span> <span class="toc_mobile_items-text">10.反射</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#11-语法糖"><span class="toc_mobile_items-number">10.</span> <span class="toc_mobile_items-text">11.语法糖</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#12-sys-同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。"><span class="toc_mobile_items-number">11.</span> <span class="toc_mobile_items-text">12.sys 同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#13-java缓存池："><span class="toc_mobile_items-number">12.</span> <span class="toc_mobile_items-text">13.java缓存池：</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#14-强转"><span class="toc_mobile_items-number">13.</span> <span class="toc_mobile_items-text">14.强转</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#15-jdk8的optional"><span class="toc_mobile_items-number">14.</span> <span class="toc_mobile_items-text">15.jdk8的optional</span></a></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-private修饰的方法可通过反射访问，那么private的意义是什么？"><span class="toc-number">1.</span> <span class="toc-text">1. private修饰的方法可通过反射访问，那么private的意义是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-一个java文件有三个类，编译后有几个class文件？"><span class="toc-number">2.</span> <span class="toc-text">2.一个java文件有三个类，编译后有几个class文件？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？"><span class="toc-number">3.</span> <span class="toc-text">3.局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-什么叫原子性操作？int-i-1-是原子性操作吗？"><span class="toc-number">4.</span> <span class="toc-text">4.什么叫原子性操作？int i= 1 是原子性操作吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-接口不用public修饰，实现类要public修饰"><span class="toc-number">5.</span> <span class="toc-text">5.接口不用public修饰，实现类要public修饰</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-String之所以不可变，是因为jdk中用final修饰了它。"><span class="toc-number">6.</span> <span class="toc-text">6.String之所以不可变，是因为jdk中用final修饰了它。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-static修饰符："><span class="toc-number">7.</span> <span class="toc-text">8.static修饰符：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-成员变量与局部变量"><span class="toc-number">8.</span> <span class="toc-text">9.成员变量与局部变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-反射"><span class="toc-number">9.</span> <span class="toc-text">10.反射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-语法糖"><span class="toc-number">10.</span> <span class="toc-text">11.语法糖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-sys-同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。"><span class="toc-number">11.</span> <span class="toc-text">12.sys 同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-java缓存池："><span class="toc-number">12.</span> <span class="toc-text">13.java缓存池：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-强转"><span class="toc-number">13.</span> <span class="toc-text">14.强转</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-jdk8的optional"><span class="toc-number">14.</span> <span class="toc-text">15.jdk8的optional</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://yr602294677.github.io/img/default_blog_index.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">JAVA题目</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2019-10-09<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2021-09-30</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/JAVA/">JAVA</a></span><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h3 id="1-private修饰的方法可通过反射访问，那么private的意义是什么？"><a href="#1-private修饰的方法可通过反射访问，那么private的意义是什么？" class="headerlink" title="1. private修饰的方法可通过反射访问，那么private的意义是什么？"></a>1. private修饰的方法可通过反射访问，那么private的意义是什么？</h3><blockquote>
+<p>可以修饰成员变量和成员方法，如果类的成员被private访问控制符修饰，则这个成员只能被该类的其他成员访问，其他类无法直接访问。类的良好封装就是通过private关键字实现的。</p>
+<p>但是俗话说没有不透风的墙。我们可以利用java中的反射从而在外界调用private的变量或方法</p>
+<p>不是为了绝对安全性设计的，是用来约束用户常规使用JAVA的方式。这就像是一家没人的店挂了个牌子“闲人免进”，但你真要进去还是有各种办法可以办到。所以private，以及所有其他的access modifier都有一层隐含的含义：如果你按照遵守这套规则，开发者可以保证不出问题（不考虑bug的情况下）；否则，后果自负。</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> PrivateTest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrivateCar</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">//private成员变量：在传统的类实例调用方式，只能在本类中访问</span></span><br><span class="line">	<span class="keyword">private</span> String color=<span class="string">"黄色"</span>;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">//protected方法：使用传统的类实例调用方式，只能在子类和本包中访问</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">drive</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"this is private car! the color is:"</span> + color);</span><br><span class="line">	&#125;</span><br><span class="line"> 	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">		PrivateCar pcar = <span class="keyword">new</span> PrivateCar();</span><br><span class="line">		pcar.drive();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//返回结果：（this is private car! the color is:黄色）</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> PrivateTest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Field;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrivateCarReflect</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">		Class clazz = PrivateCar<span class="class">.<span class="keyword">class</span></span>;</span><br><span class="line">		PrivateCar pcar = (PrivateCar) clazz.newInstance();</span><br><span class="line"></span><br><span class="line">		Field colorFld = clazz.getDeclaredField(<span class="string">"color"</span>);</span><br><span class="line">		<span class="comment">//取消java语言访问检查以访问private变量</span></span><br><span class="line">		colorFld.setAccessible(<span class="keyword">true</span>);</span><br><span class="line">		colorFld.set(pcar, <span class="string">"红色"</span>);</span><br><span class="line">		pcar.drive();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//返回结果：（this is private car! the color is:红色）</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-一个java文件有三个类，编译后有几个class文件？"><a href="#2-一个java文件有三个类，编译后有几个class文件？" class="headerlink" title="2.一个java文件有三个类，编译后有几个class文件？"></a>2.一个java文件有三个类，编译后有几个class文件？</h3><blockquote>
+<p>3个。有几个类就产生几个class文件。</p>
+</blockquote>
+<h3 id="3-局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？"><a href="#3-局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？" class="headerlink" title="3.局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？"></a>3.局部变量使用前要显式地赋值，否则编译不通过，为什么这样设计？</h3><blockquote>
+<p>成员变量不用显式赋值，在类加载的过程中给它赋予了默认值。<br> 局部变量需要显式赋值。<br> <strong>为啥不给它赋予默认值？</strong><br> 不是javac推断不出来，而是因为推断出来了，故意不这么做。<br> <strong>为啥故意不这么做？</strong><br> 因为局部变量的作用就是在局部方法中某个地方取出来用。在一个方法体内赋值和取值的顺序是固定，先赋值，才能取值。强制你赋值时因为怕你忘了！怕有了默认值之后忘记赋值导致不可预期的bug！<br> <strong>那为啥成员变量有了默认值不怕有bug？</strong><br> 因为成员变量不确定什么就会被取值出来用，还有可能在各个方法中是不同的值。所以强制让你赋值和给它默认值没什么区别，既然这样，为什么不默认呢?</p>
+<p><a href="https://blog.csdn.net/x2L5gX/article/details/81090855" target="_blank" rel="noopener">https://blog.csdn.net/x2L5gX/article/details/81090855</a></p>
+</blockquote>
+<h3 id="4-什么叫原子性操作？int-i-1-是原子性操作吗？"><a href="#4-什么叫原子性操作？int-i-1-是原子性操作吗？" class="headerlink" title="4.什么叫原子性操作？int i= 1 是原子性操作吗？"></a>4.什么叫原子性操作？int i= 1 是原子性操作吗？</h3><blockquote>
+<p>所谓原子操作是指不会被线程调度机制打断的操作；这种操作一旦开始，就一直运行到结束，中间不会有任何 context switch （切换到另一个线程）。原子操作是不可分割的，在执行完毕之前不会被任何其它任务或事件中断。在单处理器系统中，能够在单条指令中完成的操作都可以认为是” 原子操作”，因为中断只能发生于指令之间。</p>
+<p>通常所说的原子操作包括对非long和double型的primitive进行赋值，以及返回这两者之外的primitive。之所以要把它们排除在外是因为它们都比较大，而JVM的设计规范又没有要求读操作和赋值操作必须是原子操作。(Primitive JAVA的8个基本类型：boolean，char，byte，short，int，long，float，double)</p>
+<p>int i= 1 是原子性操作。</p>
+</blockquote>
+<h3 id="5-接口不用public修饰，实现类要public修饰"><a href="#5-接口不用public修饰，实现类要public修饰" class="headerlink" title="5.接口不用public修饰，实现类要public修饰"></a>5.接口不用public修饰，实现类要public修饰</h3><pre><code>如果接口不是public，那么只能在同个包下被实现，可访问权限就降低很多了。</code></pre><p>接口中的方法隐含都是public和abstrac。</p>
+<p> 而java类中成员缺省的修饰符是不写修饰符，理解为friendly(default)，拥有的权限是包权限，子类不写public时访问权限较低。</p>
+<h3 id="6-String之所以不可变，是因为jdk中用final修饰了它。"><a href="#6-String之所以不可变，是因为jdk中用final修饰了它。" class="headerlink" title="6.String之所以不可变，是因为jdk中用final修饰了它。"></a>6.String之所以不可变，是因为jdk中用final修饰了它。</h3><p><img alt="final变量修饰String类" title="String类不可变的原因" data-src="https://www.qisuiyi.top/img/Final+String.png" class="lazyload"></p>
+  <div style="page-break-after: always;"></div>  
+### 7.final修饰符：
+
+<ul>
+<li><p>修饰类</p>
+<ul>
+<li><p>final类不能被继承。</p>
+</li>
+<li><p>final类中的成员方法都会被隐式的指定为final方法</p>
+</li>
+<li><p>final类中的成员变量可以根据自己的实际需要设计为final</p>
+</li>
+<li><p>JDK中，被设计为final类的有String、System等。</p>
+</li>
+</ul>
+</li>
+<li><p>修饰方法</p>
+<ul>
+<li><p>final方法不能被重写</p>
+</li>
+<li><p>一个类的private方法会隐式的被指定为final方法。</p>
+</li>
+</ul>
+</li>
+<li><p>修饰成员变量</p>
+<ul>
+<li><p>必须要赋初始值，而且是只能初始化一次。</p>
+</li>
+<li><p>如果修饰的成员变量是基本类型，则表示这个变量的值不能改变</p>
+</li>
+<li><p>如果修饰的成员变量是一个引用类型，则是说这个引用的地址的值不能修改，但是这个引用所指向的对象里面的内容还是可以改变的。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="8-static修饰符："><a href="#8-static修饰符：" class="headerlink" title="8.static修饰符："></a>8.static修饰符：</h3><ul>
+<li><p>修饰变量：</p>
+<ul>
+<li><p>静态变量在内存中只有一份</p>
+</li>
+<li><p>可以直接通过类名访问。</p>
+</li>
+</ul>
+</li>
+<li><p>修饰方法</p>
+<ul>
+<li><p>必须有实现即不能是抽象方法</p>
+</li>
+<li><p>只能访问所属类中的静态字段和静态方法。</p>
+</li>
+</ul>
+</li>
+<li><p>静态导包</p>
+</li>
+</ul>
+<p>//使用静态变量和方法不用再指明classname，从而简化代码。（降低了可读性）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="keyword">static</span> com.xxx.ClassName.*</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="9-成员变量与局部变量"><a href="#9-成员变量与局部变量" class="headerlink" title="9.成员变量与局部变量"></a>9.成员变量与局部变量</h3><ul>
+<li><p>成员变量</p>
+<ul>
+<li><p>存在于对象所在的堆内存中。</p>
+</li>
+<li><p>有默认初始值。</p>
+</li>
+</ul>
+</li>
+<li><p>局部变量</p>
+<ul>
+<li><p>存在于栈内存中。</p>
+</li>
+<li><p>没有默认初始化值。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="10-反射"><a href="#10-反射" class="headerlink" title="10.反射"></a>10.反射</h3><p><img alt="反射" title="反射" data-src="https://www.qisuiyi.top/img/reflict.png" class="lazyload"></p>
+<ul>
+<li><p>缺点</p>
+<ul>
+<li><p>开销较大，应避免在经常使用的方法中使用反射。</p>
+</li>
+<li><p>反射必须在没有安全限制的程序中使用。</p>
+</li>
+<li><p>造成内部暴露，可能导致意想不到的后果。</p>
+</li>
+<li><p>破坏了抽象性，在平台改变时，代码行为也可能变化。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-语法糖"><a href="#11-语法糖" class="headerlink" title="11.语法糖"></a>11.语法糖</h3><ul>
+<li><p>switch（支持string）</p>
+<ul>
+<li><p>java文件  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String str = <span class="string">"world"</span>;</span><br><span class="line">  <span class="keyword">switch</span> (str) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"hello"</span>:</span><br><span class="line">      System.out.println(<span class="string">"hello"</span>);</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"world"</span>:</span><br><span class="line">      System.out.println(<span class="string">"world"</span>);</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>反编译之后的class文件（实际是对比hash值）</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String str = <span class="string">"world"</span>;</span><br><span class="line">  <span class="keyword">byte</span> var3 = -<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">switch</span>(str.hashCode()) &#123;</span><br><span class="line">  <span class="keyword">case</span> <span class="number">99162322</span>:</span><br><span class="line">    <span class="keyword">if</span> (str.equals(<span class="string">"hello"</span>)) &#123;</span><br><span class="line">      var3 = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">  <span class="keyword">case</span> <span class="number">113318802</span>:</span><br><span class="line">    <span class="keyword">if</span> (str.equals(<span class="string">"world"</span>)) &#123;</span><br><span class="line">      var3 = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">switch</span>(var3) &#123;</span><br><span class="line">  <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">    System.out.println(<span class="string">"hello"</span>);</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">  <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    System.out.println(<span class="string">"world"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>泛型</p>
+</li>
+<li><p>自动装箱/拆箱</p>
+<ul>
+<li><p>java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//装箱</span></span><br><span class="line"><span class="keyword">int</span> m = <span class="number">10</span>;</span><br><span class="line">Integer n = m;</span><br><span class="line"></span><br><span class="line"><span class="comment">//拆箱</span></span><br><span class="line">Integer i = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> j = i;</span><br><span class="line"></span><br><span class="line"><span class="comment">//  class文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//装箱 通过调用包装器的valueOf方法实现的</span></span><br><span class="line"><span class="keyword">int</span> m = <span class="number">10</span>;</span><br><span class="line">Integer n = Integer.valueOf(m);</span><br><span class="line"></span><br><span class="line"><span class="comment">//拆箱</span></span><br><span class="line">Integer i = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> j = i;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>条件编译：不符合条件的代码不编译，</p>
+</li>
+<li><p>数值字面量: 都允许在数字之间插入任意多个下划线，目的为方便阅读。</p>
+</li>
+<li><p>for-each:原理为for循环+迭代器</p>
+</li>
+</ul>
+<h3 id="12-sys-同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。"><a href="#12-sys-同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。" class="headerlink" title="12.sys 同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。"></a>12.sys 同步修饰符只能在一台虚拟机用，对于单机系统某些代码可能没问题，多个机器上就会出现问题。</h3><h3 id="13-java缓存池："><a href="#13-java缓存池：" class="headerlink" title="13.java缓存池："></a>13.java缓存池：</h3><pre><code> 对于基本类型的变量，如果变量值的范围在缓存池的范围中，就可以直接使用缓冲池中的对象。
+
+基本类型对应的缓冲池如下：</code></pre><ul>
+<li><p>boolean ： true and false</p>
+</li>
+<li><p>byte：all byte values</p>
+</li>
+<li><p>short ： -128 - 127</p>
+</li>
+<li><p>int ：  -128 - 127（  IntegerCache 很特殊可以通过参数调节 ，启动 jvm<br>的时候，通过 -XX:AutoBoxCacheMax=&lt;size&gt; 来指定这个缓冲池的大小）</p>
+</li>
+<li><p>char ：\u0000 - \u007F</p>
+</li>
+</ul>
+<p>//valueOf()就是利用缓存池的例子，调用时会先判断值是否在缓存池中，如果在的话就直接返回缓存池的内容。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Integer <span class="title">valueOf</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (i \&gt;= IntegerCache.low &amp;&amp; i \&lt;= IntegerCache.high)</span><br><span class="line">         <span class="keyword">return</span> IntegerCache.cache[i + (-IntegerCache.low)]; </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Integer(i); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="14-强转"><a href="#14-强转" class="headerlink" title="14.强转"></a>14.强转</h3><ol>
+<li><p>字符串转换成整数（ 字符串转换成byte, short, int, float, double,<br>long等数据类型，可以分别参考Byte, Short, Integer, Float, Double,<br>Long类的parseXXX方法。）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String MyNumber =<span class="string">"1234"</span>;</span><br><span class="line"><span class="keyword">int</span> MyInt = Integer.parseInt(MyNumber);</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>整数转换成字符串：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> MyInt = <span class="number">1234</span>;</span><br><span class="line">String MyString = <span class="string">""</span> + MyInt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="15-jdk8的optional"><a href="#15-jdk8的optional" class="headerlink" title="15.jdk8的optional"></a>15.jdk8的optional</h3><ul>
+<li><p>ofNullable()/of()：初始化</p>
+</li>
+<li><p>isPresent()：判断是否有值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String name = <span class="keyword">null</span>;</span><br><span class="line">Optional&lt;String&gt; opt1 = Optional.of(name);<span class="comment">//报错：NullPointerException</span></span><br><span class="line">Optional&lt;String&gt; opt2 = Optional.of(name);<span class="comment">//opt2=Optional.empty</span></span><br><span class="line">System.out.println(opt1.isPresent());<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>orElse();</p>
+</li>
+<li><p>orElseGet();</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String name = <span class="keyword">null</span>;</span><br><span class="line">  System.out.println(<span class="string">"orElse:"</span>);</span><br><span class="line">  String str1 = Optional.ofNullable(name).orElse(getName());</span><br><span class="line">  System.out.println(str1);</span><br><span class="line">  System.out.println(<span class="string">"orElseGet:"</span>);</span><br><span class="line">  String str2 = Optional.ofNullable(name).orElseGet(()-\&gt;getName());</span><br><span class="line">  System.out.println(str2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  System.out.println(<span class="string">"调用getName方法"</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="string">"xiaoming"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//name为null时，输出结果为</span></span><br><span class="line"><span class="comment">//orElse:   调用getName方法  xiaoming</span></span><br><span class="line"><span class="comment">//orElseGet: 调用getName方法  xiaoming</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//name为："xiaogang"时，输出结果为</span></span><br><span class="line"><span class="comment">//orElse:      调用getName方法  xiaogang </span></span><br><span class="line"><span class="comment">//orElseGet:   xiaogang</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<p>差异为 入参为null时，orElse()方法会调用里面的方法，但是必须返回string.在执行较密集的调用时，比如调用 Web<br>服务或数据查询，<strong>这个差异会对性能产生重大影响</strong>。</p>
+<ul>
+<li><p>.filter()方法，按条件筛选。可以用来筛选邮箱、中英文字符密码等。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String str1 =<span class="string">"[aa163.com"</span>;](http:<span class="comment">//aa163.com/)</span></span><br><span class="line">String result =Optional.ofNullable(str1).filter(u -\&gt; u!= <span class="keyword">null</span> &amp;&amp;u.contains(<span class="string">"\@"</span>)).orElse(<span class="string">"&lt;bb@163.com&gt;"</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JAVA/">JAVA    </a></div><div class="post_share"><div class="social-share" data-image="https://yr602294677.github.io/img/default_blog_index.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2019/10/17/MQ%E7%9B%B8%E5%85%B3/"><img class="prev_cover lazyload" data-src="https://yr602294677.github.io/img/default_blog_index.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>MQ基础知识</span></div></a></div><div class="next-post pull_right"><a href="/2019/10/09/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"><img class="next_cover lazyload" data-src="https://yr602294677.github.io/img/default_blog_index.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>Head first for 设计模式</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2019/11/29/Redis基础笔记/" title="Redis"><img class="relatedPosts_cover lazyload"data-src="https://yr602294677.github.io/img/default_blog_index.jpg"><div class="relatedPosts_title">Redis</div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'oXAUQbPsWpC7eCSa4p11LaOq-gzGzoHsz',
+  appKey:'WQ3bbNkvCgrRhHBktsBX9Pmm',
+  placeholder:'欢迎留言',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer id="footer" style="background-image: url(https://yr602294677.github.io/img/default_blog_index.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 By 且随意</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">永远年轻，永远热泪盈眶</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
